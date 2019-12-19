@@ -5,8 +5,8 @@
 #define WORD 30
 
 char substr(const char *src, int m, int n);
-int Getline(char s[]);
-int Length(char ch[]);
+int get_line(char s[]);
+int length(char ch[]);
 int getword(char w[]);
 int substring(char* str1, char* str2);
 int similar(char* s, char* t, int n);

@@ -8,7 +8,7 @@
 
 int main() {
 
-//isort
+
 int tmp = 0;
 int arr[SIZE];
 printf("insert %d numbers:\n" , SIZE);
@@ -21,8 +21,9 @@ printf("The original array is:\n");
    for (int i=0; i < SIZE ;i++){
     printf("%d,",*(arr+i));
    }
+printf("\n");
 
-  insertion_sort(arr,SIZE);
+insertion_sort(arr,SIZE);
 
   
 printf("The array after insertion_sort is:\n");
@@ -31,6 +32,6 @@ for (int i=0; i < SIZE ;i++){
    }
 printf("\n");
 
- //printf("%d",*(arr+SIZE-1));
-
+ 
 }
+

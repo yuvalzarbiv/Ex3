@@ -5,8 +5,7 @@
 #define WORD 30
 
 
-int Getline(char s[])
-{
+int get_line(char s[]){
     char c = getchar();
     int counter = 0;
     while (c != '\n' && c != EOF){
@@ -36,7 +35,7 @@ int getword(char w[]){
   return counter;
  }
 
-int Length(char c[])
+int length(char c[])
 {
 	int length = 0;
 
@@ -49,8 +48,8 @@ int Length(char c[])
 
 int substring(char* str1, char* str2)
 {
-	int len1 = Length(str1);
-	int len2 = Length(str2);
+	int len1 = length(str1);
+	int len2 = length(str2);
 	int i = 0;
 	int j = 0;
 	int counter = 0;
@@ -75,8 +74,8 @@ int substring(char* str1, char* str2)
 
 int similar(char* s, char* t, int n)
 {
-	int len1 = Length(s);
-	int len2 = Length(t);
+	int len1 = length(s);
+	int len2 = length(t);
 	int counter = 0;
 	int i = 0, j = 0;
 	int d = 0;;
@@ -104,7 +103,7 @@ int similar(char* s, char* t, int n)
 
 void print_lines(char* str) {
  char line[LINE];
- while(Getline(line) != EOF) {
+ while(get_line(line) != EOF) {
  	if(substring(line,str)) {
 		printf("%s\n", line);
 	}
